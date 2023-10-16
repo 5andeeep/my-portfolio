@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>San Cool Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#about">#Sandeep</a>
+      </div>
+      <div class="links">
+        <a href="#projects">.projects</a>
+        <a href="#about">.about</a>
+        <a href="#contact">.contact</a>
+      </div>
+      <div class="menuBar-icon" onclick="showMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <div class="menu-bar active" id="menu">
+      <div>
+        <a href="#projects">.projects</a>
+        <a href="#about">.about</a>
+        <a href="#contact">.contact</a>
+      </div>
+    </div>
+
+    <main class="main-container">
+      <!-- profile section -->
+      <div class="profile-section">
+        <div class="left-side">
+          <h1>Hi there, I'm Sandeep &#128591</h1>
+          <!-- &#9996; -->
+          <div class="my-profile">
+            I'm a <span>&lt;&sol;frontend developer&gt;</span>
+          </div>
+          <div class="objectives">
+            I'm a trained fresher as a front-end developer with knowledge of different languages, frameworks, and technologies. I'm always looking for new challenges to tackle.
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/5andeeep" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sandeep893" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <button
+              id="cv-btn"
+              onclick="window.open('assets/Resume_Sandeep_updated.pdf')"
+            >
+              Download CV
+            </button>
+          </div>
+        </div>
+        <div class="right-side">
+          <img id="photo" src="./assets/profile_pic1.jpg" alt="DP" />
+        </div>
+      </div>
+
+      <!-- project section -->
+      <div class="projects-section" id="projects">
+        <p id="project-title">&lt;projects&gt;</p>
+        <!-- project 1 -->
+        <div class="projects" id="project-podcast">
+          <div
+            class="project-photo"
+            onclick="window.open('https://san-podcast-platform.netlify.app/')"
+          >
+            <img src="./assets/podcast_project.png" alt="podcast_project" />
+          </div>
+          <div class="project-details">
+            <h1 class="project-name">Podcast Platform</h1>
+            <p class="project-desc">
+              A podcast platform where anyone can listen to others podcasts. Anyone can upload their thoughts in an audio form and share with others.(login: bhoomi@gmail.com, password-12345678)
+            </p>
+            <p class="project-techs">
+              Build with: HTML, CSS, Javascript, React, Firebase and hosted on
+              Netlify
+            </p>
+            <div class="project-demo-code-btn">
+              <button id="visitWebsite-btn" class="button" onclick="window.open('https://san-podcast-platform.netlify.app/')">Visit Website</button>
+              <button id="codeView-btn" class="button" onclick="window.open('https://github.com/5andeeep/Podcast-Platform')">View Code</button>
+            </div>
+          </div>
+        </div>
+        <!-- project 2 -->
+        <div class="projects" id="project-typing">
+          <div class="project-details">
+            <h1 class="project-name">FattFinger Typing</h1>
+            <p class="project-desc">
+              Similar to other typing master, you can test your typing speed. But it's design is very minimalistic and beautiful. Bunch of theses are available to choose. Anyone can login to save their data to see the growth later.
+            </p>
+            <p class="project-techs">
+              Build with: HTML, CSS, Javascript, React, Firebase and hosted on
+              Netlify
+            </p>
+            <div class="project-demo-code-btn">
+              <button id="visitWebsite-btn" class="button" onclick="window.open('https://fattfingertyping.netlify.app/')">Visit Website</button>
+              <button id="codeView-btn" class="button" onclick="window.open('https://github.com/5andeeep/fattfingertyping-project')">View Code</button>
+            </div>
+          </div>
+          <div
+            class="project-photo"
+            onclick="window.open('https://fattfingertyping.netlify.app/')"
+          >
+            <img
+              src="./assets/typingMaster_project.png"
+              alt="podcast_project"
+            />
+          </div>
+        </div>
+        <!-- project 3 -->
+        <div class="projects" id="project-codeEditor">
+          <div
+            class="project-photo"
+            onclick="window.open('https://san-code-editor.netlify.app/')"
+          >
+            <img src="./assets/codeEditor_project.png" alt="podcast_project" />
+          </div>
+          <div class="project-details">
+            <h1 class="project-name">Code Editor</h1>
+            <p class="project-desc">
+              A simple code editor for developers and replica of Codepen in-terms of design. "Moneco editor" was used to get the features of a code editor.
+            </p>
+            <p class="project-techs">
+              Build with: HTML, CSS, Javascript, React hosted on
+              Netlify
+            </p>
+            <div class="project-demo-code-btn">
+              <button id="visitWebsite-btn" class="button" onclick="window.open('https://san-code-editor.netlify.app/')">Visit Website</button>
+              <button id="codeView-btn" class="button" onclick="window.open('https://github.com/5andeeep/Code_Editor')">View Code</button>
+            </div>
+          </div>
+        </div>
+        <!-- project 4 -->
+        <div class="projects" id="project-pictureBazaar">
+          <div class="project-details">
+            <h1 class="project-name">Picture Bazaar</h1>
+            <p class="project-desc">
+                Picture Bazaar is website where we can search the picture and we will get pictures related to that topic. It has infinite scroll feature, it means we will get a lot of pictures.
+            </p>
+            <p class="project-techs">
+              Build with: HTML, CSS, Javascript, React and hosted on
+              Netlify
+            </p>
+            <div class="project-demo-code-btn">
+              <button id="visitWebsite-btn" class="button" onclick="window.open('https://picturebazaar.netlify.app/')">Visit Website</button>
+              <button id="codeView-btn" class="button" onclick="window.open('https://github.com/5andeeep/Picture-Bazaar')">View Code</button>
+            </div>
+          </div>
+          <div
+            class="project-photo"
+            onclick="window.open('https://picturebazaar.netlify.app/')"
+          >
+            <img
+              src="./assets/pictureBazaar_project.png"
+              alt="podcast_project"
+            />
+          </div>
+        </div>
+        <!-- project 5 -->
+        <div class="projects" id="project-onlineStore">
+          <div
+            class="project-photo"
+            onclick="window.open('https://my-online-bazaar.netlify.app/')"
+          >
+            <img
+              src="./assets/onlineShoppingStore_project.png"
+              alt="podcast_project"
+            />
+          </div>
+          <div class="project-details">
+            <h1 class="project-name">Online Shopping Bazaar</h1>
+            <p class="project-desc">
+              In this project I used fake product API. We can search according to the categories and filters. We can add product in the cart. And for payment razorpay test API was used.
+              We also have option to login or signup. (e.g. aman@gmail.com, password-aman)
+            </p>
+            <p class="project-techs">
+              Build with: HTML, CSS, Javascript and hosted on
+              Netlify
+            </p>
+            <div class="project-demo-code-btn">
+              <button id="visitWebsite-btn" class="button" onclick="window.open('https://my-online-bazaar.netlify.app/')">Visit Website</button>
+              <button id="codeView-btn" class="button" onclick="window.open('https://github.com/5andeeep/E_Shopping_Store')">View Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- about section -->
+      <div id="about" class="skills-section">
+        <div class="all-skills">
+            <div class="left-side-skills">
+                <p id="project-title">&lt;about me&gt;</p>
+                <h2 class="skills-title">Skills</h2>
+                <p class="skills-text">I am quite familiar with some front-end development tech-stack like HTML, CSS, Javascript and React. I also know Java since I was learning DSA in java. I have fair amount of knowledge of Firebase and SQL. These are some of the technologies that I'have used in my projects as well. Having said that I am always open to learn new things to better myself.</p>
+            </div>
+            <div class="right-side-skills">
+                <div class="skills-icons">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skills-icons">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skills-icons">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JS</p>
+                </div>
+                <div class="skills-icons">
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="skills-icons">
+                    <i class="fa-brands fa-java"></i>
+                    <p>Java</p>
+                </div>
+                <div class="skills-icons">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p>Git</p>
+                </div>
+                <div class="skills-icons">
+                    <i class="fa-brands fa-github"></i>
+                    <p>Github</p>
+                </div>
+                <div class="skills-icons">
+                  <i class="fa-brands fa-bootstrap"></i>
+                  <p>Bootstrap</p>
+                </div>
+                <div class="skills-icons">
+                    <i class="fa-solid fa-database"></i>
+                    <p>Database</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- contact section -->
+      <div id="contact" class="contact-section">
+        <div class="left-side-contact">
+          <p id="project-title">&lt;contact me&gt;</p>
+          <h2>Let's work together</h2>
+          <p id="question">Have any Question? Feel free to message me along with your email address. I'll get back to you as soon as possible!</p>
+          <a href="mailto:emailsandeep893@gmail.com" id="sendEmail">Click here to send an Email</a>
+          <div class="social-links">
+            <a href="https://github.com/5andeeep" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sandeep893" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <button
+              id="cv-btn"
+              onclick="window.open('assets/Resume_Sandeep_updated.pdf')"
+            >
+              Download CV
+            </button>
+          </div>
+        </div>
+        <div class="right-side-contact">
+          <form action="https://formsubmit.co/a6fda64cd6451a7700155f8c9fa24ef0" method="post">
+            <textarea name="Message" id="message" placeholder="Message" required style="width: 100%; height: 400px;"></textarea>
+            <button type="submit">Send Message</button>
+            <p>*kindly mention you email address with message*</p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Copyright &copy 2023 Sandeep. All rights reserved.</p>
+    </footer>
+
+    <script src="App.js"></script>
+  </body>
+</html>
+
+
+<!-- 
+    <div id="experience" class="about-myself">
+        <img src="./assets/experience.png" alt="experience">
+        <p>3 years of experience in non-IT field</p>
+    </div> 
+    <div id="education" class="about-myself">
+        <img src="./assets/education.png" alt="education">
+        <p>Bachelor of Arts from Delhi University</p>
+    </div>
+ -->

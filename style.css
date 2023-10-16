@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Autour+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+}
+/* navbar styling */
+.navbar {
+  /* border: 1px solid black; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  padding: 0px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: bold;
+  /* color: black; */
+  /* background-color: black; */
+  margin-bottom: 60px;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.navbar .links a {
+  /* border: 1px solid salmon; */
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.navbar .menuBar-icon{
+  /* border: 1px solid white; */
+  height: 100%;
+  /* padding: 10px; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.navbar .links a:hover {
+  background-color: #3636df;
+  color: white;
+}
+.logo a {
+  font-size: 28px;
+  text-decoration: none;
+  color: black;
+  font-family: Autour One, "sans-serif";
+  transition: all 0.3s ease;
+}
+.links {
+  /* border: 1px solid white; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  transition: all 0.3s ease;
+}
+/* Ending navbar styling */
+
+/* menu-bar styling */
+.menu-bar{
+  /* border: 1px solid green; */
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+.active{
+  display: none;
+}
+
+.menu-bar div{
+  /* border: 1px solid lawngreen; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.menu-bar div a{
+  width: 100%;
+  color: white;
+  font-size: 22px;
+  padding: 25px 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.menu-bar div a:hover{
+  background-color: #3636df;
+}
+/* End of Menu Bar */
+
+
+/* main container styling */
+.main-container {
+  margin-top: 200px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+/* End of main container */
+
+/* profile section styling */
+.profile-section {
+  /* border: 1px solid black; */
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px auto;
+  transition: all 0.3s ease;
+}
+
+.left-side {
+  /* border: 1px solid black; */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+.left-side h1 {
+  font-size: 40px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.my-profile {
+  font-size: 40px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.my-profile span {
+  color: #3636df;
+}
+
+.objectives{
+  color: gray;
+  transition: all 0.3s ease;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+.social-links i {
+  /* border: 1px solid black; */
+  color: black;
+  font-size: 24px;
+  padding: 5px 7px;
+  /* margin-left: 5px; */
+  transition: all 0.3s ease;
+}
+.social-links i:hover {
+  color: #3636df;
+  transform: translate(2px, -4px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#cv-btn {
+  margin-left: 5px;
+  padding: 7px 10px;
+  background-color: #3636df;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+#cv-btn:hover {
+  cursor: pointer;
+  background-color: inherit;
+  color: blue;
+}
+
+.right-side {
+  /* border: 1px solid black; */
+  width: 350px;
+  height: 420px;
+  object-fit: cover;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 0 0 2px rgba(0,0,0,1), 8px 8px 0 0 rgba(0,0,0,1);
+  transition: all 0.3s ease;
+}
+.right-side img{
+    width: 350px;
+    height: 100%;
+    background-image: center;
+}
+/* End of profile section */
+
+/* Projects container styling */
+.projects-section{
+  /* border: 1px solid black; */
+  width: 90%;
+  margin-inline: auto;
+  padding-top: 100px;
+  transition: all 0.3s ease;
+}
+#project-title{
+  font-size: 30px;
+  font-weight: 500;
+  color: #3636df;
+  transition: all 0.3s ease;
+}
+.projects{
+  /* border: 1px solid brown; */
+  width: 100%;
+  /* height: 450px; */
+  /* padding-block: 50px; */
+  margin: 60px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.project-photo{
+  /* border: 1px solid #dfdfdf; */
+  width: 45%;
+  height: 450px;
+  padding-top: 50px;
+  padding-left: 80px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#project-podcast .project-photo{
+  background-color: #D470DD;
+  border: 1px solid #D470DD;
+}
+#project-typing .project-photo{
+  background-color: #E8D850;
+  border: 1px solid #E8D850;
+}
+#project-codeEditor .project-photo{
+  background-color: #724AE4;
+  border: 1px solid #724AE4;
+}
+#project-pictureBazaar .project-photo{
+  background-color: #2275C1;
+  border: 1px solid #2275C1;
+}
+#project-onlineStore .project-photo{
+  background-color: #E48E7C;
+  border: 1px solid #E48E7C;
+}
+.project-photo:hover{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.project-photo img{
+  border-top: 1px solid gray;
+  border-left: 1px solid grey;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  padding-top: 5px;
+  padding-left: 5px;
+  background-color: #dddd;
+  transition: all 0.3s ease;
+}
+.project-details{
+  /* border: 1px solid salmon; */
+  width: 45%;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transition: all 0.3s ease;
+}
+.project-desc, .project-techs{
+  color: gray;
+}
+.project-details .project-name{
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.project-demo-code-btn .button{
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-right: 25px;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.project-demo-code-btn .button:nth-child(1){
+  background-color: black;
+  color: white;
+}
+.project-demo-code-btn .button:nth-child(1):hover{
+  color: black;
+  background-color: inherit;
+  text-decoration: underline;
+}
+.project-demo-code-btn .button:nth-child(2){
+  background-color: blue;
+  color: white;
+}
+.project-demo-code-btn .button:nth-child(2):hover{
+  color: blue;
+  background-color: inherit;
+  text-decoration: underline;
+}
+/* End of projects section */
+
+/* skills/about section styling */
+.skills-section{
+  background-color: black;
+  color: white;
+  padding-block: 105px;
+  margin-block: 30px;
+  transition: all 0.3s ease;
+}
+.all-skills{
+  /* border: 1px solid white; */
+  width: 90%;
+  /* height: 500px; */
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+/* left side */
+.left-side-skills{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transition: all 0.3s ease;
+}
+.left-side-skills .skills-title{
+  font-size: 30px;
+  transition: all 0.3s ease;
+}
+.left-side-skills .skills-text{
+  color: gray;
+}
+/* right side */
+.right-side-skills{
+  /* border: 1px solid black; */
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  transition: all 0.3s ease;
+}
+.skills-icons{
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.skills-icons p{
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.skills-icons i{
+  font-size: 46px;
+  transition: all 0.3s ease;
+}
+/* End of about section */
+
+/* contact section styling */
+.contact-section{
+  /* border: 1px solid black; */
+  width: 90%;
+  /* height: 500px; */
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.left-side-contact{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+.left-side-contact #question{
+  color: gray;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+.left-side-contact #sendEmail{
+  width: fit-content;
+  color: gray;
+  font-size: 18px;
+  padding: 4px;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.left-side-contact #sendEmail:hover{
+  color: white;
+  background-color: black;
+}
+
+.right-side-contact{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: all 0.3s ease;
+}
+.right-side-contact form{
+  /* width: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid #aaaaaa; */
+  gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.right-side-contact form textarea{
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #aaaaaa;
+}
+.right-side-contact form p{
+  font-size: 14px;
+  color: gray;
+}
+.right-side-contact form button{
+  padding: 5px 20px;
+  background-color: blue;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  margin-block: 5px;
+  transition: all 0.3s ease;
+}
+.right-side-contact form button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+/* End of contact section */
+
+/* Footer styling */
+.footer{
+  text-align: center;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
