@@ -56,7 +56,7 @@ a {
 }
 .navbar .links a:hover {
   background-color: #3636df;
-  color: white;
+  /* color: white; */
 }
 .logo a {
   font-size: 28px;
